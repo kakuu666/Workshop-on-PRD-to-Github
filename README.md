@@ -33,6 +33,33 @@ An interactive fitness companion concept for everyday nutrition, recovery, and h
 
 **Try it:** Mark a habit complete, log water, filter or save the meal plan, ask the Copilot for a snack or recovery tip, select a soreness area, and start the recovery timer. A few demo preferences persist in your browser using `localStorage`.
 
+## 📸 Product screenshots & flows
+
+These concept screenshots show the broader product direction across nutrition planning, the fitness dashboard, post-workout recovery, and mobile. They are design explorations—not exact captures of the running prototype. Try the [live demo](https://kakuu666.github.io/Workshop-on-PRD-to-Github/) to experience the implemented screens and interactions.
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="project%20screenshots/ChatGPT%20Image%20Oct%205,%202026,%2011_52_01%20AM.png" alt="Personalized diet plan concept for desktop and mobile, with meal cards and nutrition estimates" width="100%">
+      <strong>Personalized diet plan</strong>
+    </td>
+    <td width="50%" align="center">
+      <img src="project%20screenshots/Gemini_Generated_Image_n8fa6hn8fa6hn8fa.png" alt="FUEL YOUTH FIT desktop dashboard and mobile product experience" width="100%">
+      <strong>Fitness dashboard &amp; mobile experience</strong>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="project%20screenshots/FUEL%20Youth%20Fit%20Recovery%20Dashboard.png" alt="Post-workout recovery concept with mobility, stretching, video, and safety guidance" width="100%">
+      <strong>Post-workout recovery</strong>
+    </td>
+    <td width="50%" align="center">
+      <img src="project%20screenshots/Gemini_Generated_Image_obik6jobik6jobik.png" alt="Mobile FUEL YOUTH FIT dashboard concept with nutrition, workout, recovery, and progress" width="100%">
+      <strong>Mobile daily dashboard</strong>
+    </td>
+  </tr>
+</table>
+
 ## 🎨 Design direction
 
 These are the supplied sample screens that informed the visual direction. They are design references, not screenshots of the running prototype.
@@ -110,6 +137,7 @@ This repository includes a GitHub Actions workflow at `.github/workflows/pages.y
 | [`styles.css`](styles.css) | Responsive design system and screen styling |
 | [`app.js`](app.js) | Navigation, filters, demo chat, timer, and browser-local state |
 | [`assets/`](assets/) | Local athlete portrait used by the prototype |
+| [`project screenshots/`](project%20screenshots/) | Product concept screenshots showing desktop, mobile, nutrition, and recovery flows |
 | [`design/screenshots/`](design/screenshots/) | Curated design references from the supplied sample screens |
 | [`context.md`](context.md) | Product goals, requirements, measures, and open decisions |
 | [`plan.md`](plan.md) | Implementation phases, acceptance checks, and risks |
