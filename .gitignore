@@ -1,0 +1,11 @@
+# Source documents and original design export (kept locally; curated screenshots are in design/screenshots)
+Untitled document.docx
+stitch_fuel_youth_fit_copilot.zip
+stitch_fuel_youth_fit_copilot/
+
+# Editor, operating-system, and generated files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

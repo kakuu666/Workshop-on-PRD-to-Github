@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f7ff">
+    <meta name="description" content="A portfolio-ready fitness copilot demo for personalized nutrition, recovery, and progress.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FUEL YOUTH FIT — Your daily fitness copilot">
+    <meta property="og:description" content="An interactive, mobile-friendly fitness companion concept for everyday nutrition, recovery, and habits.">
+    <meta property="og:url" content="https://kakuu666.github.io/Workshop-on-PRD-to-Github/">
+    <meta property="og:image" content="https://kakuu666.github.io/Workshop-on-PRD-to-Github/design/screenshots/home-dashboard.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <title>FUEL YOUTH FIT — Your daily fitness copilot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="FUEL YOUTH FIT home" data-view="home">
+        <span class="brand-mark" aria-hidden="true">ϟ</span>
+        <span class="brand-copy"><span class="brand-kicker">FUEL YOUTH FIT</span><strong id="topbar-title">Home</strong></span>
+      </a>
+      <div class="topbar-actions">
+        <span class="demo-label"><span class="status-dot"></span> Interactive demo</span>
+        <button class="icon-button" type="button" aria-label="Show demo information" data-action="about">i</button>
+        <img class="avatar avatar-small" src="assets/athlete-avatar.png" alt="Demo athlete profile">
+      </div>
+    </header>
+
+    <main id="main-content" class="app-shell">
+      <section class="view is-active" id="view-home" aria-labelledby="home-title">
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">SATURDAY · YOUR TRAINING DAY</p>
+            <h1 id="home-title">Good morning, Ravi <span aria-hidden="true">☀️</span></h1>
+            <p class="subheading">Small steps make strong habits. Here's your day at a glance.</p>
+          </div>
+          <div class="streak-pill"><span aria-hidden="true">🔥</span><span><strong>6 days</strong><small>current streak</small></span></div>
+        </div>
+
+        <div class="home-grid">
+          <div class="home-main">
+            <article class="card greeting-card">
+              <div class="greeting-top">
+                <div>
+                  <span class="eyebrow">DAILY FUEL</span>
+                  <h2>You're making<br>great progress.</h2>
+                  <p>You're <strong>420 kcal</strong> away from today's energy target.</p>
+                </div>
+                <div class="calorie-ring" aria-label="72 percent of daily calorie target"><span><strong>72%</strong><small>today</small></span></div>
+              </div>
+              <div class="week-strip" aria-label="Weekly activity">
+                <span><small>M</small><b>✓</b></span><span><small>T</small><b>✓</b></span><span><small>W</small><b>✓</b></span><span><small>T</small><b>✓</b></span><span><small>F</small><b>✓</b></span><span class="today"><small>S</small><b>🔥</b></span><span class="muted"><small>S</small><b>·</b></span>
+              </div>
+            </article>
+
+            <article class="card copilot-card">
+              <div class="copilot-icon" aria-hidden="true">✦</div>
+              <div class="copilot-copy">
+                <span class="eyebrow">FUEL AI COPILOT</span>
+                <h2>What would you like help with today?</h2>
+              </div>
+              <button class="round-action" type="button" aria-label="Open FUEL AI chat" data-view="copilot">↗</button>
+              <div class="quick-actions">
+                <button class="chip-button" type="button" data-view="diet">♧ <span>Create my diet plan</span><span aria-hidden="true">→</span></button>
+                <button class="chip-button" type="button" data-view="recovery">◉ <span>Recover after workout</span><span aria-hidden="true">→</span></button>
+              </div>
+            </article>
+
+            <article class="card nutrition-card">
+              <div class="section-title-row">
+                <div><span class="eyebrow">NUTRITION VELOCITY</span><h2>Today's macros</h2></div>
+                <span class="soft-tag">Synced just now</span>
+              </div>
+              <div class="calorie-line"><strong>1,450</strong><span>/ 2,000 kcal</span><span class="macro-percent">72%</span></div>
+              <div class="progress-track"><span style="width:72%"></span></div>
+              <div class="macro-grid">
+                <div class="macro-box"><span>Protein</span><strong>95g</strong><small>of 140g</small><i><b style="width:68%"></b></i></div>
+                <div class="macro-box"><span>Carbs</span><strong>160g</strong><small>of 210g</small><i><b class="lime-bar" style="width:76%"></b></i></div>
+                <div class="macro-box"><span>Fats</span><strong>45g</strong><small>of 65g</small><i><b class="blue-bar" style="width:69%"></b></i></div>
+              </div>
+              <p class="fine-print">Estimates based on your daily goal and meal log.</p>
+            </article>
+          </div>
+
+          <div class="home-side">
+            <article class="card workout-card">
+              <div class="workout-photo"><span class="live-tag">↗ SCHEDULED FOR TODAY</span><div class="photo-caption"><span class="eyebrow">EVENING · 6:00 PM</span><h2>Upper Body Strength</h2></div></div>
+              <div class="workout-meta"><span>◷ 45 min</span><span>◉ Moderate</span><span>≋ 4 exercises</span></div>
+              <p class="workout-description">DB incline bench · Pull-ups · Cable press</p>
+              <button class="primary-button full-button" type="button" data-view="recovery">View recovery guide <span aria-hidden="true">→</span></button>
+            </article>
+
+            <div class="mini-card-grid">
+              <article class="card mini-stat"><span class="eyebrow">HYDRATION</span><strong><span id="hydration-amount">1.8</span> <small>/ 3.0 L</small></strong><div class="progress-track"><span id="water-progress" style="width:60%"></span></div><button type="button" class="small-button" data-action="water">＋ 250 ml quick log</button></article>
+              <article class="card mini-stat"><span class="eyebrow">RECOVERY</span><strong>84% <small class="good-label">Optimal</small></strong><p>Great HRV and 7.5 hrs sleep. Ready to train.</p><button type="button" class="text-button" data-view="recovery">View readiness →</button></article>
+            </div>
+
+            <article class="card habits-card">
+              <div class="section-title-row"><h2>Daily habits</h2><span class="soft-tag" id="habits-count">3 of 5 complete</span></div>
+              <div class="habit-list">
+                <label class="habit-item is-done"><input type="checkbox" checked><span class="checkmark"></span><span>Morning hydration</span><small>Done</small></label>
+                <label class="habit-item is-done"><input type="checkbox" checked><span class="checkmark"></span><span>10k daily steps</span><small>Done</small></label>
+                <label class="habit-item"><input type="checkbox"><span class="checkmark"></span><span>Protein target (140g)</span><small>Pending</small></label>
+                <label class="habit-item"><input type="checkbox"><span class="checkmark"></span><span>Evening mobility</span><small>15 min</small></label>
+                <label class="habit-item is-done"><input type="checkbox" checked><span class="checkmark"></span><span>Quality rest</span><small>Done</small></label>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-diet" aria-labelledby="diet-title" hidden>
+        <div class="page-heading">
+          <div><p class="eyebrow">DAY 14 TARGET · <span class="green-text">● SYNCHRONIZED</span></p><h1 id="diet-title">Today's fuel plan</h1><p class="subheading">Personalized for Ravi · High protein &amp; budget friendly</p></div>
+          <button class="secondary-button" id="save-plan" type="button" data-action="save-plan">♡ <span id="save-plan-label">Save plan</span></button>
+        </div>
+        <div class="diet-summary card">
+          <div><span class="eyebrow">ESTIMATED CALORIC INTAKE</span><strong class="summary-number">1,950 <small>kcal</small></strong></div>
+          <span class="soft-tag">↗ Evening workout</span>
+          <div class="diet-macros"><span>Protein <b>135g</b><i><b style="width:76%"></b></i></span><span>Carbs <b>210g</b><i><b class="lime-bar" style="width:80%"></b></i></span><span>Fats <b>60g</b><i><b class="blue-bar" style="width:70%"></b></i></span></div>
+          <p class="fine-print">Estimates tailored to your evening training routine. Values are illustrative, not medical or dietary advice.</p>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter meals">
+          <button class="filter-chip is-selected" type="button" data-filter="all">All meals</button>
+          <button class="filter-chip" type="button" data-filter="budget">⌂ Hostel / mess friendly</button>
+          <button class="filter-chip" type="button" data-filter="quick">◷ Quick prep</button>
+        </div>
+        <div class="meal-grid">
+          <article class="meal-card card" data-tags="budget quick"><div class="meal-visual meal-breakfast"><span>BREAKFAST · 8:30 AM</span><b>420 kcal</b></div><div class="meal-content"><div class="meal-title"><h2>Spiced paneer &amp; oats cheela</h2><button class="icon-button swap-button" type="button" aria-label="Swap breakfast">⇄</button></div><p>Savory Indian pancakes with cumin and fresh herbs.</p><div class="tag-row"><span>28g protein</span><span>35g carbs</span><span>18g fat</span><span>Prep: 12 min</span></div><div class="meal-note">✦ Prep your oats mix at night for a 5-min cooking start.</div></div></article>
+          <article class="meal-card card" data-tags="budget"><div class="meal-visual meal-lunch"><span>LUNCH · 1:30 PM</span><b>640 kcal</b></div><div class="meal-content"><div class="meal-title"><h2>Dal tadka, rice &amp; salad</h2><button class="icon-button swap-button" type="button" aria-label="Swap lunch">⇄</button></div><p>High-protein comfort food with complex carbohydrates.</p><div class="tag-row"><span>44g protein</span><span>68g carbs</span><span>14g fat</span><span>Budget &lt; ₹80</span></div><div class="meal-note">⌂ In hostel mess: add a boiled egg or paneer for extra protein.</div></div></article>
+          <article class="meal-card card" data-tags="quick"><div class="meal-visual meal-snack"><span>PRE-WORKOUT · 5:15 PM</span><b>310 kcal</b></div><div class="meal-content"><div class="meal-title"><h2>Banana, peanut butter &amp; chana</h2><button class="icon-button swap-button" type="button" aria-label="Swap snack">⇄</button></div><p>Sustained energy before your evening gym session.</p><div class="tag-row"><span>18g protein</span><span>42g carbs</span><span>8g fat</span><span>5 min prep</span></div></div></article>
+          <article class="meal-card card" data-tags="budget quick"><div class="meal-visual meal-dinner"><span>DINNER · 8:45 PM</span><b>580 kcal</b></div><div class="meal-content"><div class="meal-title"><h2>Paneer bhurji &amp; multigrain rotis</h2><button class="icon-button swap-button" type="button" aria-label="Swap dinner">⇄</button></div><p>Slow-digesting protein for overnight recovery.</p><div class="tag-row"><span>36g protein</span><span>45g carbs</span><span>High fiber</span></div><div class="meal-note">♧ Plant-based option: swap paneer for tofu.</div></div></article>
+        </div>
+        <p class="disclaimer">Nutrition values are estimates for this demo, not medical prescriptions. Adjust according to your personal needs.</p>
+      </section>
+
+      <section class="view" id="view-copilot" aria-labelledby="copilot-title" hidden>
+        <div class="page-heading"><div><p class="eyebrow">YOUR FITNESS COMPANION</p><h1 id="copilot-title">Ask FUEL AI</h1><p class="subheading">Personalized support for your training day.</p></div><span class="pro-pill">✦ COPILOT</span></div>
+        <div class="chat-layout">
+          <aside class="card chat-context"><div class="assistant-profile"><div class="copilot-icon">✦</div><div><strong>FUEL AI</strong><span class="green-text">● Available for demo</span></div></div><p>Tell me about your goals, meals, or how you're feeling after a workout.</p><div class="context-divider"></div><span class="eyebrow">YOUR DEMO CONTEXT</span><ul><li>Goal: build strength</li><li>Routine: evening workouts</li><li>Preference: budget friendly</li></ul><div class="safety-note">General fitness information only. This demo does not diagnose or replace professional medical advice.</div></aside>
+          <div class="card chat-panel">
+            <div class="chat-messages" id="chat-messages" aria-live="polite">
+              <div class="message assistant-message"><span class="message-avatar">✦</span><div><p>Hey Ravi! Your evening workout is coming up. What can I help you with today?</p><small>FUEL AI · just now</small></div></div>
+              <div class="message user-message"><div><p>I have a workout at 6 PM. What should I eat before?</p><small>You · 4:18 PM</small></div></div>
+              <div class="message assistant-message"><span class="message-avatar">✦</span><div><p>A banana with a spoon of peanut butter and roasted chana is a simple, budget-friendly snack about 45–60 minutes beforehand. It provides carbohydrates for energy and some protein. Your needs may vary—use this as a general idea, not a prescribed plan.</p><small>FUEL AI · 4:18 PM</small></div></div>
+            </div>
+            <div class="suggestion-row"><button class="suggestion-chip" type="button">Budget snack ideas</button><button class="suggestion-chip" type="button">Post-workout stretch</button></div>
+            <form class="chat-composer" id="chat-form"><label class="visually-hidden" for="chat-input">Message FUEL AI</label><input id="chat-input" name="message" autocomplete="off" placeholder="Ask about food, training or recovery..." required><button type="button" class="voice-button" aria-label="Voice input (not available in this demo)" data-action="voice">◖</button><button class="send-button" type="submit" aria-label="Send message">➤</button></form>
+            <p class="chat-footnote">Demo replies are illustrative and prewritten. No message is sent to an AI service.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-recovery" aria-labelledby="recovery-title" hidden>
+        <div class="page-heading"><div><p class="eyebrow">EVENING PUSH DAY · 48 MIN COMPLETED</p><h1 id="recovery-title">Recover smarter</h1><p class="subheading">A gentle post-workout routine, tailored to today's session.</p></div><span class="pro-pill">✦ AI TAILORED</span></div>
+        <article class="card recovery-summary"><div class="recovery-summary-top"><span class="lime-pill">⚡ Moderate–high intensity</span><span class="green-text">● Readiness 84%</span></div><div class="recovery-metrics"><div><span>Heart rate</span><strong>114 <small>bpm</small></strong></div><div><span>Metabolic burn</span><strong>410 <small>kcal</small></strong></div><div><span>Muscle fatigue</span><strong>78<small>%</small></strong></div></div></article>
+        <div class="recovery-grid">
+          <div class="recovery-main">
+            <article class="card soreness-card"><div class="section-title-row"><div><span class="eyebrow">CHECK IN</span><h2>Targeted soreness map</h2></div><span class="soft-tag" id="soreness-count">2 selected</span></div><p>Where are you feeling tight or fatigued?</p><div class="soreness-options"><button type="button" class="soreness-chip is-selected">✓ Chest &amp; delts</button><button type="button" class="soreness-chip">○ Upper back</button><button type="button" class="soreness-chip is-selected">✓ Triceps</button><button type="button" class="soreness-chip">○ Hamstrings</button><button type="button" class="soreness-chip">○ Lower back</button></div></article>
+            <article class="card routine-card"><div class="section-title-row"><div><span class="eyebrow">14 MIN · 4 STEPS</span><h2>Guided recovery routine</h2><p>Chest &amp; shoulder decompression</p></div><span class="soft-tag">Gentle pace</span></div>
+              <div class="routine-step"><span class="step-number">01</span><div><strong>Doorway chest stretch</strong><p>Light tension · Hold for 30 seconds each side</p></div><span class="step-time">3 min</span></div>
+              <div class="routine-step"><span class="step-number">02</span><div><strong>Thoracic foam rolling</strong><p>Slow, controlled extension across upper back</p></div><span class="step-time">4 min</span></div>
+              <div class="routine-step"><span class="step-number">03</span><div><strong>Banded shoulder mobility</strong><p>Easy range of motion · Stop if uncomfortable</p></div><span class="step-time">4 min</span></div>
+              <div class="routine-step"><span class="step-number">04</span><div><strong>Diaphragmatic cooldown</strong><p>Comfortable breathing · Relax your shoulders</p></div><span class="step-time">3 min</span></div>
+              <div class="timer-panel" id="timer-panel" hidden><span class="eyebrow">SESSION IN PROGRESS</span><strong id="timer-display">14:00</strong><p id="timer-step">Step 1 of 4 · Doorway chest stretch</p></div>
+              <button class="primary-button full-button" type="button" id="recovery-start">▷ Start recovery session · 14 min</button>
+              <button class="secondary-button full-button favorite-button" id="favorite" type="button" data-action="favorite">♡ <span id="favorite-label">Save routine to favorites</span></button>
+            </article>
+          </div>
+          <aside class="safety-card"><span class="safety-icon">✚</span><div><strong>Safety first</strong><p>These are general recovery suggestions for post-workout muscle fatigue. If you experience sharp, sudden, worsening, or localized joint pain, stop and consult a qualified healthcare professional.</p></div></aside>
+        </div>
+      </section>
+
+      <section class="view" id="view-progress" aria-labelledby="progress-title" hidden>
+        <div class="page-heading"><div><p class="eyebrow">YOUR CONSISTENCY, AT A GLANCE</p><h1 id="progress-title">Progress that adds up</h1><p class="subheading">Celebrate what you do, one day at a time.</p></div><span class="streak-pill"><span>🔥</span><span><strong>6 days</strong><small>current streak</small></span></span></div>
+        <div class="stats-grid">
+          <article class="card stat-card"><span class="eyebrow">WORKOUTS THIS WEEK</span><strong>4 <small>/ 5</small></strong><span class="stat-trend">↑ 1 from last week</span></article>
+          <article class="card stat-card"><span class="eyebrow">HABITS COMPLETED</span><strong id="progress-habits">3 <small>/ 5</small></strong><span class="stat-trend">Keep your rhythm going</span></article>
+          <article class="card stat-card"><span class="eyebrow">RECOVERY SESSIONS</span><strong id="progress-recovery">2 <small>this week</small></strong><span class="stat-trend">A little goes a long way</span></article>
+        </div>
+        <div class="progress-grid">
+          <article class="card chart-card"><div class="section-title-row"><div><span class="eyebrow">WEEKLY ACTIVITY</span><h2>Your training rhythm</h2></div><span class="soft-tag">This week</span></div><div class="activity-chart" role="img" aria-label="Activity chart for Monday to Sunday"><div><span style="height:45%"></span><small>M</small></div><div><span style="height:72%"></span><small>T</small></div><div><span style="height:58%"></span><small>W</small></div><div><span style="height:88%"></span><small>T</small></div><div><span style="height:62%"></span><small>F</small></div><div class="chart-today"><span style="height:38%"></span><small>S</small></div><div class="chart-muted"><span style="height:10%"></span><small>S</small></div></div><div class="chart-legend"><span><i></i> Active minutes</span><strong>214 min <small>this week</small></strong></div></article>
+          <article class="card consistency-card"><div class="section-title-row"><div><span class="eyebrow">CONSISTENCY</span><h2>Keep showing up</h2></div><span class="consistency-score">82</span></div><p>Your routine is taking shape. Four active days this week—nice work.</p><div class="progress-track"><span style="width:82%"></span></div><small>Based on your logged habits and sessions</small></article>
+        </div>
+        <article class="card history-card"><div class="section-title-row"><div><span class="eyebrow">RECENT ACTIVITY</span><h2>Your activity log</h2></div><button class="text-button" type="button" data-action="history">View all →</button></div><div class="history-row"><span class="history-icon">♧</span><div><strong>Today's fuel plan</strong><small>Diet plan · Today, 8:32 AM</small></div><span class="history-status">Saved</span></div><div class="history-row"><span class="history-icon recovery-icon">☾</span><div><strong>Evening recovery</strong><small>Mobility · Yesterday, 7:24 PM</small></div><span class="history-status">Completed</span></div><div class="history-row"><span class="history-icon workout-icon">↗</span><div><strong>Upper body strength</strong><small>Workout · Thursday, 6:05 PM</small></div><span class="history-status">Completed</span></div></article>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-item is-active" type="button" data-view="home"><span aria-hidden="true">⌂</span><small>Home</small></button>
+      <button class="nav-item" type="button" data-view="diet"><span aria-hidden="true">♧</span><small>Diet</small></button>
+      <button class="nav-item copilot-nav" type="button" data-view="copilot"><span aria-hidden="true">ϟ</span><small>FUEL AI</small></button>
+      <button class="nav-item" type="button" data-view="recovery"><span aria-hidden="true">☾</span><small>Recovery</small></button>
+      <button class="nav-item" type="button" data-view="progress"><span aria-hidden="true">⌁</span><small>Progress</small></button>
+    </nav>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <dialog class="about-dialog" id="about-dialog"><form method="dialog"><button class="dialog-close" aria-label="Close">×</button></form><span class="brand-mark">ϟ</span><p class="eyebrow">PORTFOLIO DEMO</p><h2>Fitness guidance, thoughtfully designed.</h2><p>This is a static, front-end concept based on the FUEL YOUTH FIT product requirements and supplied sample screens. It uses example data and scripted interactions—there is no account, backend, medical assessment, or connected AI service.</p><button class="primary-button full-button" type="button" data-action="close-about">Got it</button></dialog>
+  </body>
+</html>
