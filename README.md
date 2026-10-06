@@ -38,11 +38,22 @@ An interactive fitness companion concept for everyday nutrition, recovery, and h
 These are the supplied sample screens that informed the visual direction. They are design references, not screenshots of the running prototype.
 
 <p align="center">
-  <a href="design/screenshots/home-dashboard.png"><img src="design/screenshots/home-dashboard.png" alt="Supplied FUEL YOUTH FIT home dashboard design" width="155"></a>
-  <a href="design/screenshots/diet-plan.png"><img src="design/screenshots/diet-plan.png" alt="Supplied personalized diet plan design" width="155"></a>
-  <a href="design/screenshots/copilot-chat.png"><img src="design/screenshots/copilot-chat.png" alt="Supplied FUEL AI chat design" width="155"></a>
-  <a href="design/screenshots/recovery.png"><img src="design/screenshots/recovery.png" alt="Supplied recovery design" width="155"></a>
+  <a href="design/screenshots/home-dashboard.png"><img src="design/screenshots/home-dashboard.png" alt="Supplied FUEL YOUTH FIT home dashboard design" width="195"></a>
+  <a href="design/screenshots/diet-plan.png"><img src="design/screenshots/diet-plan.png" alt="Supplied personalized diet plan design" width="195"></a>
+  <a href="design/screenshots/copilot-chat.png"><img src="design/screenshots/copilot-chat.png" alt="Supplied FUEL AI chat design" width="195"></a>
+  <a href="design/screenshots/recovery.png"><img src="design/screenshots/recovery.png" alt="Supplied recovery design" width="195"></a>
 </p>
+
+## 🧠 From product brief to working prototype
+
+This project demonstrates the complete path from product thinking to a shareable interface:
+
+| Focus | What the project demonstrates |
+| --- | --- |
+| **Product strategy** | Translating a PRD into prioritized P0/P1/P2 capabilities, a north-star metric, counter-metrics, and explicit open decisions. |
+| **Experience design** | Connecting five task-focused screens into a responsive, accessible experience, with clear safety boundaries for health-related content. |
+| **Frontend craft** | Building interactive flows with semantic HTML, modern CSS, and dependency-free JavaScript. |
+| **Delivery** | Publishing a static site through GitHub Actions and GitHub Pages, with no build step or service credentials. |
 
 ## 🧭 Product priorities
 
